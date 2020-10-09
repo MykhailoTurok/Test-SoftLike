@@ -39,7 +39,7 @@ class BlockOne extends React.Component {
             </header>
             <div className="flex-al-center">
                 <div className="action-text">
-                    <h2 className="text-uppercase">Raise the next generation of leaders</h2>   
+                    <h2 className="text-uppercase blue-text">Raise the next generation of leaders</h2>   
                     <ul>
                         <li className="block-one-li-one">
                             <p className="block-one-li-one-one">Networking Lab is the fastest way to grow</p>

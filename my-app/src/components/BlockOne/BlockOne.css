@@ -1,6 +1,7 @@
 .block-one {
     margin: 0;
     padding: 0 15%;
+    justify-content: space-between;
     font-family: 'SF Pro Display';
     background-image: url("../../IMG/Layer\ 9.png");
     background-position: top right;
@@ -52,11 +53,7 @@
     color: #32f4ff;
 }
 
-/* Block One */
-
-.block-one {
-    justify-content: space-between;
-}
+/* Main content */
 
 .action-text {
     display: flex;
@@ -65,7 +62,8 @@
     margin-top: 90px;
     width: 556px;
 }
-.action-text h2 {
+
+.blue-text {
     font-size: 26px;
     font-weight: 900;
     letter-spacing: 0.65px;
@@ -104,7 +102,6 @@
     width: 331px;
     margin-bottom: 10px;
     list-style: none;
-    /* list-style-image: url('/Resources/IMG/Shape\ 8.png'); */
     font-size: 16px;
     line-height: 1.38;
     color: #060839;
