@@ -12,24 +12,6 @@ body {
     text-transform: uppercase;
 }
 
-.button-conteiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #54cff0;
-    border-radius: 20px;
-    color: #ffffff;
-    height: 44px;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.14px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.button-conteiner:hover {
-    background-color: #54def0;
-}
-
 /* Footer section */
 
 .footer-list {

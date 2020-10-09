@@ -1,6 +1,6 @@
 import React from 'react';
+import Button from '../Button/Button';
 import './BlockTwo.css';
-// import Button from '../Button/Button.js';
 
 class BlockTwo extends React.Component {
     render() {
@@ -15,7 +15,7 @@ class BlockTwo extends React.Component {
                     By using assessment of knowledge, educational modules, you will be able to build your organization in accordance with digital trends, upgrade skills and information awareness of personnel, create a team that will be working faster and more efficiently.
                 </p>
                 <h3 className="block-two-blue-text">Set up a testing team and get a free 6 week trial</h3>
-                <a href="#" className="button-conteiner">Начать командное испытание</a>
+                <Button text="Начать командное испытание" />
             </section>
         );
     }

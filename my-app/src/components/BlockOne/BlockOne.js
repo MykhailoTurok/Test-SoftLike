@@ -2,7 +2,7 @@ import React from 'react';
 import '../../CSS/fonts.css';
 import '../../CSS/animation.css'
 import './BlockOne.css';
-// import Button from '../Button/Button.js';
+import Button from '../Button/Button.js';
 
 // Importing pictures
 import Logo from '../../IMG/logo.png';
@@ -54,7 +54,7 @@ class BlockOne extends React.Component {
                             online business.
                         </li>
                     </ul>
-                    <a href="#" className="button-conteiner">Become the company of the new generation</a>
+                    <Button text="Become the company of the new generation" />
                 </div>
                 <div>
                     <img src={MainPic} alt="picture" className="block-one-img" />
