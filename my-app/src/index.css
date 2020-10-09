@@ -30,44 +30,6 @@ body {
     background-color: #54def0;
 }
 
-/* Block two */
-
-.block-two {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 736px;
-    margin: 10% auto;
-}
-
-.block-two-title {
-    font-size: 26px;
-    font-weight: 900;
-    letter-spacing: 0.65px;
-    color: #060839;
-}
-
-.block-two-description {
-    width: 100%;
-    font-size: 16px;
-    line-height: 1.38;
-    color: #6d7e8a;
-}
-
-.block-two-blue-text {
-    font-size: 22.5px;
-    margin-bottom: 39px;
-    font-weight: bold;
-    letter-spacing: 0.56px;
-    color: #3652e4;
-}
-
-.block-two .button-conteiner {
-    width: 360px;
-}
-
 /* Footer section */
 
 .footer-list {
