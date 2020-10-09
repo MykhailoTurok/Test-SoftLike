@@ -1,0 +1,126 @@
+.block-one {
+    margin: 0;
+    padding: 0 15%;
+    font-family: 'SF Pro Display';
+    background-image: url("../../IMG/Layer\ 9.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+/* Header section */
+
+.header {
+    justify-content: space-between;
+}
+
+.conteiner-logo {
+    display: flex;
+    align-items: center;
+}
+
+.text-logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2.6px;
+    color: #060839;
+    margin-left: 10px;
+}
+
+.header-conteiner-menu {
+    list-style: none;
+    justify-content: flex-end;
+    width: 462px;
+    color: #ffffff;
+}
+
+.header-conteiner-menu li {
+    margin-left: 20px;
+}
+
+.header-menu-lastLi {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.header-menu-icons {
+    margin-right: 6px;
+}
+
+.header-menu-link {
+    color: #32f4ff;
+}
+
+/* Block One */
+
+.block-one {
+    justify-content: space-between;
+}
+
+.action-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 90px;
+    width: 556px;
+}
+.action-text h2 {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 0.65px;
+    color: #3652e4;
+}
+
+.action-text ul {
+    margin: 0;
+    padding: 0;
+}
+
+.block-one-li-one {
+    margin-bottom: 27px;
+    border-bottom: solid 3px #3652e4;
+    list-style: none;
+}
+
+.block-one-li-one-one {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.55px;
+    color: #060839;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+	        animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+}
+
+.block-one-li-one-two {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #6d7e8a;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+	        animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+}
+
+.block-one-li-two {
+    width: 331px;
+    margin-bottom: 10px;
+    list-style: none;
+    /* list-style-image: url('/Resources/IMG/Shape\ 8.png'); */
+    font-size: 16px;
+    line-height: 1.38;
+    color: #060839;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+	        animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+}
+.block-one-li-three {
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+            animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+            margin-bottom: 36px;
+}
+
+.block-one .button-conteiner {
+    width: 390px;
+}
+
+.block-one-img {
+    width: 100%;
+}

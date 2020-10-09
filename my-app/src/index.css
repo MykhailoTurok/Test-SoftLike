@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-al-center {
+    display: flex;
+    align-items: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.button-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #54cff0;
+    border-radius: 20px;
+    color: #ffffff;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.button-conteiner:hover {
+    background-color: #54def0;
+}
+
+/* Block two */
+
+.block-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 736px;
+    margin: 10% auto;
+}
+
+.block-two-title {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 0.65px;
+    color: #060839;
+}
+
+.block-two-description {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.38;
+    color: #6d7e8a;
+}
+
+.block-two-blue-text {
+    font-size: 22.5px;
+    margin-bottom: 39px;
+    font-weight: bold;
+    letter-spacing: 0.56px;
+    color: #3652e4;
+}
+
+.block-two .button-conteiner {
+    width: 360px;
+}
+
+/* Footer section */
+
+.footer-list {
+    padding: 0;
+    list-style: none;
+    width: 462px;
+}
+
+/* Media screen section */
+
+@media screen and (min-width: 1980px) and (max-width: 2040px) {
+    
+}
+@media screen and (min-width: 1025px) and (max-width: 1980px) {
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+   
+}
+@media screen and (min-width: 320px) and (max-width: 449px) {
+    
+}
+
+/* Meadia screen section */
+
+@media screen and (min-width: 1965px) {
+    body {
+        font-size: 22px;
+    }
+}
+@media screen and (min-width: 1441px) and (max-width: 1964px) {
+    body {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 11px;
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+    body {
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 449px) {
+    body {
+        font-size: 8px;
+    }
+}
