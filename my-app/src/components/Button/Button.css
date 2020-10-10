@@ -11,7 +11,10 @@
     letter-spacing: 0.14px;
     text-transform: uppercase;
     text-decoration: none;
+    border: 1px solid transparent;
+    margin-bottom: 20px;
 }
+
 .button-conteiner:hover {
     background-color: #54def0;
 }
