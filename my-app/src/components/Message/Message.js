@@ -22,7 +22,6 @@ class Message extends React.Component {
                         <form>
                             <input type="text" name="Youre Name" placeholder="Youre Name" />
                             <input type="email" name="Youre e-mail address" placeholder="Youre e-mail address" />
-                            {/* <input type="submit" value="Contact sales" /> */}
                             <Button text="Contact sales" />
                         </form>
                     </div>

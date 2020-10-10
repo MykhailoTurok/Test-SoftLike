@@ -1,0 +1,25 @@
+.block-three {
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../../IMG/Layer\ 18.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    font-family: SF Pro Display;
+    padding: 105px 15%;
+}
+
+.block-three-title {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 0.65px;
+    text-align: center;
+}
+
+.block-three-description {
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: center;
+    width: 739px;
+}
