@@ -14,6 +14,7 @@ class ThreeMain extends React.Component {
             return (
                 <div className={this.props.classTabs} key={el} activecheck = {this.state.numberTabs === i ? 'active' : ''} onClick = { () => this.setState({numberTabs: i})}>
                     {el}
+                    <div className="underline"></div>
                 </div>
             )
         })

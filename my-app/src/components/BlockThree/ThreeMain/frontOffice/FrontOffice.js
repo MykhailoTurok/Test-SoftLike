@@ -10,14 +10,14 @@ export default class FrontOffice extends React.Component {
                 <p className="threeMain-first-tabs-description">Provide tools for development of your unit managers online</p>
                 <ThreeMain data={{
                     tabs: [
-                        <p className="text-uppercase threeMain-secondTab">Automated marketing (mail user agent)</p>, 
-                        <p className="text-uppercase threeMain-secondTab">Landing page builder</p>
+                        <p className="text-uppercase threeMain-second-tab">Automated marketing (mail user agent)</p>, 
+                        <p className="text-uppercase threeMain-second-tab">Landing page builder</p>
                     ],
                     content: [
                         <AutomatedMarketing />,
                         <LandingPageBuilder />
                     ]
-                }} classTabs={"threeMain-secondTabs"} />
+                }} classTabs={"threeMain-second-tabs"} />
             </React.Fragment>
         );
     }

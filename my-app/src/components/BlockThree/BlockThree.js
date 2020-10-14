@@ -19,7 +19,7 @@ class BlockThree extends React.Component {
                         <Backoffice />, 
                         <FrontOffice />
                     ]
-                }} classTabs = {"text-uppercase threeMain-first-tabs"} />
+                }} classTabs = {"flex-al-center text-uppercase threeMain-first-tabs"} />
                 
                 
             </section>
