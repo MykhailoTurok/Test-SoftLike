@@ -7,7 +7,7 @@
     background-position: center;
     color: #ffffff;
     font-family: SF Pro Display;
-    padding: 105px 15%;
+    padding: 11% 10% 100px 10%;
 }
 
 .block-three-title {
@@ -15,6 +15,7 @@
     font-weight: 900;
     letter-spacing: 0.65px;
     text-align: center;
+    margin: 0;
 }
 
 .block-three-description {

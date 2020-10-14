@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '../Button/Button';
-import '../../CSS/animation.css'
+import Button from '../../Button/Button';
+import '../../../CSS/animation.css'
 import './Message.css'
 
 class Message extends React.Component {

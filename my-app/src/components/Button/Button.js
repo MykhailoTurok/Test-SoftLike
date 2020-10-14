@@ -12,11 +12,7 @@ class Button extends React.Component {
     }
 
     render() {
-        return ( 
-            <div>
-                <a href="#" className="button-conteiner" onClick={this.openModal}>{this.props.text}</a>
-            </div>
-        );
+        return (<p className="button-conteiner" onClick={this.openModal}>{this.props.text}</p>);
     }
 };
   

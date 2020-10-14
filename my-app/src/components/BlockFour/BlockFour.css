@@ -1,0 +1,86 @@
+.blockFour {
+    padding: 4% 15%;
+    overflow: hidden;
+    font-family: 'SF Pro Display';
+}
+
+.blockFour-title {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 0.65px;
+    color: #060839;
+}
+
+.blockFour-main {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    overflow: scroll;
+}
+
+.blockFour-main-numbers {
+    height: 350%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 13px 0;
+}
+
+.blockNumbers {
+    width: 68px;
+    height: 161px;
+    justify-content: center;
+    
+    box-sizing: border-box;
+}
+
+.blockNumbers span{
+    width: 68px;
+    height: 68px;
+    color: #54cff0;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 0.85;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.blockFour-main-content {
+    width: 90%;
+}
+
+.blockFour-main-content-blocks {
+    height: 161px;
+    padding: 20px 43px;
+    box-shadow: 0 0 10px silver;
+    margin: 13px 0;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* .blockFour-main-content-blockText {
+
+} */
+
+.blockFour-main-content-blockText h2{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.55px;
+    color: #060839;
+}
+
+.blockFour-main-content-blockText p{
+    font-size: 16px;
+    line-height: 1.38;
+    color: #6d7e8a;
+}
+
+.blockFour-main-content-blockImg {
+    width: 213px;
+    height: inherit;
+    background-color: #e6f1ff;
+}
+
+/* .blockFour-main-content-blockTitle {
+
+} */

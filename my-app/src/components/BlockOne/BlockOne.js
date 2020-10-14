@@ -33,7 +33,7 @@ class BlockOne extends React.Component {
                     </li>
                     <li className="header-menu-lastLi">
                         <img src={Email} alt="Email" className="header-menu-icons" />
-                        <a href="#" className="header-menu-link">hello@nlab.com</a>
+                        <a href="_blank" className="header-menu-link">hello@nlab.com</a>
                     </li>
                 </ul>
             </header>
@@ -57,7 +57,7 @@ class BlockOne extends React.Component {
                     <Button text="Become the company of the new generation" />
                 </div>
                 <div>
-                    <img src={MainPic} alt="picture" className="block-one-img" />
+                    <img src={MainPic} alt="illustration of a schedule" className="block-one-img" />
                 </div>
             </div>
         </section>
