@@ -12,57 +12,129 @@ import MainPic from '../../IMG/Hue_Saturation 1.png';
 
 
 class BlockOne extends React.Component {
-  render() {
-    return (
-		<section className="block-one">
-            <header className="flex-al-center header">
-                <div className="conteiner-logo">
-                    <img src={Logo} alt="Logo" />
-                    <span className="text-logo">LOGO</span>
+    constructor(props){
+        super(props);
+        this.state = {
+            title: '',
+            stretchLineHeight: 0,
+        }
+        this.stretchList = React.createRef();
+    }
+    
+    componentDidMount(){
+        this.showTitle(['Raise the next generation of leaders','Duplicate your success online','Make the best distributors', 'Maximize yourbusiness'])
+        this.changeStretchLineHeight();
+    }
+    
+    changeStretchLineHeight(){
+        setTimeout(() => {
+            let list = this.stretchList.current;
+            let lastItem = list.querySelectorAll('li')[list.querySelectorAll('li').length - 1];
+    
+            let y1 = list.getBoundingClientRect().top
+            let y2 = lastItem.getBoundingClientRect().top
+            let r = y2 - y1
+    
+            this.setState({ stretchLineHeight: r });
+        }, 1000)
+    }
+    
+    showTitle(text){
+        let i = 0;
+        let result = '';
+        let wordDone = false;
+    
+        setInterval(() => {
+            if(!wordDone){
+                if(result.length < text[i].length){
+                    result += text[i][result.length]
+                } else {
+                    wordDone = !wordDone;
+                }
+            } else {
+                if(result.length > 0){
+                    let arr = result.split('')
+                    arr.pop();
+                    result = arr.join('')
+                } else {
+                    wordDone = !wordDone;
+                    changeText()
+                }            
+            }
+            this.setState({ title: result })
+    
+            function changeText(){
+                i++
+                if(i >= text.length){
+                    i = 0;
+                }
+            }
+        }, 100)
+    }
+
+    render() {
+        return (
+            <section className="block-one">
+                <div className="center-main-block">
+                    <header className="flex-al-center header">
+                        <div className="conteiner-logo">
+                            <img src={Logo} alt="Logo" />
+                            <span className="text-logo">LOGO</span>
+                        </div>
+                        <ul className="flex-al-center header-conteiner-menu">
+                            <li>
+                                <span className="text-uppercase">Функционал</span>
+                            </li>
+                            <li>
+                                <span className="text-uppercase">Пакеты</span>
+                            </li>
+                            <li className="header-menu-lastLi">
+                                <img src={Phone} alt="Phone" className="header-menu-icons" />
+                                <span>+1111111100</span>
+                            </li>
+                            <li className="header-menu-lastLi">
+                                <img src={Email} alt="Email" className="header-menu-icons" />
+                                <a href="_blank" className="header-menu-link">hello@nlab.com</a>
+                            </li>
+                        </ul>
+                    </header>
+                    <div className="flex-al-center block-one-main">
+                        <div className="block-one-text-container">
+                            <h2 className="text-uppercase title-appearing">{this.state.title}</h2>
+
+                            <div className="stretch-container">
+                                <div className="stretch-left">
+                                    <div className="stretch-line" style={{ height: this.state.stretchLineHeight }}></div>
+                                </div>
+                                <ul ref={this.stretchList}>
+                                    <li className="block-one-li-one fade-in block-one-li-networking">
+                                        Networking Lab is the fastest way to grow
+                                    </li>
+                                    <li className="fade-in block-one-li-virtualOffice">
+                                        Virtual office of a multi-level marketing company, platform for integrated digitalization of a MLM company’s activities.
+                                    </li>
+                                    <li className="fade-in block-one-li-attractSkilled">
+                                        Attract skilled professionals, unite your team to pursue a common goal working expediently and
+                                        in perfect coordination.
+                                    </li>
+                                    <li className="fade-in block-one-li-attractSkilled block-one-li-three">
+                                        Provide your market research consultants with efficient tools in order to achieve success in
+                                        online business.
+                                    </li>
+                                </ul>
+                            </div>   
+                            
+                            <Button text="Become the company of the new generation" />
+                        </div>
+                        <div>
+                            <img src={MainPic} alt="illustration of a schedule" className="block-one-img" />
+                        </div>
+                    </div>
                 </div>
-                <ul className="flex-al-center header-conteiner-menu">
-                    <li>
-                        <span className="text-uppercase">Функционал</span>
-                    </li>
-                    <li>
-                        <span className="text-uppercase">Пакеты</span>
-                    </li>
-                    <li className="header-menu-lastLi">
-                        <img src={Phone} alt="Phone" className="header-menu-icons" />
-                        <span>+1111111100</span>
-                    </li>
-                    <li className="header-menu-lastLi">
-                        <img src={Email} alt="Email" className="header-menu-icons" />
-                        <a href="_blank" className="header-menu-link">hello@nlab.com</a>
-                    </li>
-                </ul>
-            </header>
-            <div className="flex-al-center">
-                <div className="action-text">
-                    <h2 className="text-uppercase blue-text">Raise the next generation of leaders</h2>   
-                    <ul>
-                        <li className="block-one-li-one">
-                            <p className="block-one-li-one-one">Networking Lab is the fastest way to grow</p>
-                            <p className="block-one-li-one-two">Virtual office of a multi-level marketing company, platform for integrated digitalization of a MLM company’s activities.</p>
-                        </li>
-                        <li className="block-one-li-two">
-                            Attract skilled professionals, unite your team to pursue a common goal working expediently and
-                            in perfect coordination.
-                        </li>
-                        <li className="block-one-li-two block-one-li-three">
-                            Provide your market research consultants with efficient tools in order to achieve success in
-                            online business.
-                        </li>
-                    </ul>
-                    <Button text="Become the company of the new generation" />
-                </div>
-                <div>
-                    <img src={MainPic} alt="illustration of a schedule" className="block-one-img" />
-                </div>
-            </div>
-        </section>
-    );
-  }
+                
+            </section>
+        );
+    }
 };
 
 export default BlockOne;

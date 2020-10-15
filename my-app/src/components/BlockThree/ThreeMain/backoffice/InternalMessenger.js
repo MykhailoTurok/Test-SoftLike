@@ -1,6 +1,5 @@
 import React from 'react';
 import chat3Img from '../../../../IMG/chat3.png';
-import markImg from '../../../../IMG/Shape8.png';
 
 export default class InternalMessenger extends React.Component {
     render() {

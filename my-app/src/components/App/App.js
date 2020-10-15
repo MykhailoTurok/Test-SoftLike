@@ -10,13 +10,13 @@ class App extends React.Component {
   
   render() {
     return (
-      <div className="conteiner">
+      <React.Fragment>
         <BlockOne />
         <BlockTwo />
         <BlockThree />
         <BlockFour />
         <Message />
-      </div> 
+      </React.Fragment>
     );
   }
 };

@@ -1,12 +1,28 @@
 .block-one {
     margin: 0;
-    padding: 0 10%;
-    justify-content: space-between;
+    position: relative;
     font-family: 'SF Pro Display';
+}
+
+.block-one:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    height: 100%;
+    width: 910px;
     background-image: url("../../IMG/Layer\ 9.png");
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 100%;
+    transform: translate(0,-50%);
+}
+
+.block-one .center-main-block{
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 /* Header section */
@@ -29,13 +45,15 @@
 }
 
 .header-conteiner-menu {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    justify-content: flex-end;
-    width: 462px;
+    justify-content: space-between;
     color: #ffffff;
 }
 
 .header-conteiner-menu li {
+    font-size: 14px;
     margin-left: 20px;
 }
 
@@ -55,63 +73,109 @@
 
 /* Main content */
 
-.action-text {
+/* .block-one-main {
+} */
+
+.block-one-text-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 90px;
-    width: 556px;
+    width: 50%;
 }
 
-.blue-text {
-    font-size: 26px;
-    font-weight: 900;
-    letter-spacing: 0.65px;
-    color: #3652e4;
+.title-appearing{
+  color: #3652e4;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 0.65px;
+  text-transform: uppercase;
+}
+.title-appearing:after{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    margin-left: 10px;
+    background-color: #3652e4;
+    transform: translateY(0.2em);
+    animation: title-appearing 1s ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes title-appearing{
+    0%{opacity: 0}
+    50%{opacity: 1}
+    100%{opacity: 0}
 }
 
-.action-text ul {
+.stretch-container{
+    display: flex;
+}
+.stretch-left{
+    position: relative;
+    width: 27px;
+    min-width: 27px;
+}
+.stretch-line{
+    position: relative;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-right: 2px dashed #d0e2f8;
+    transition: height 4s ease-in-out;
+}
+/* .stretch-right{
+
+} */
+
+.block-one-text-container ul {
     margin: 0;
+    margin-bottom: 36px;
     padding: 0;
-}
-
-.block-one-li-one {
-    margin-bottom: 27px;
-    border-bottom: solid 3px #3652e4;
     list-style: none;
 }
 
-.block-one-li-one-one {
+.block-one-li-networking {
     font-size: 22px;
     font-weight: 500;
     letter-spacing: 0.55px;
     color: #060839;
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
-	        animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+    animation-delay: 0.5s;
 }
 
-.block-one-li-one-two {
+.block-one-li-virtualOffice {
     font-size: 16px;
     line-height: 1.75;
     color: #6d7e8a;
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
-	        animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+    animation-delay: 1s;
+    padding: 10px 0;
+    margin-bottom: 27px;
+    border-bottom: solid 3px #3652e4;
 }
 
-.block-one-li-two {
+.block-one-li-attractSkilled {
     width: 331px;
     margin-bottom: 10px;
-    list-style: none;
     font-size: 16px;
     line-height: 1.38;
     color: #060839;
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
-	        animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+    animation-delay: 1.5s;
 }
+
+.block-one-li-two:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    display: block;
+    width: 29px;
+    height: 29px;
+    background-color: green;
+    border-radius: 50%;
+}
+
 .block-one-li-three {
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
-            animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
-            margin-bottom: 36px;
+    animation-delay: 2s;
 }
 
 .block-one .button-conteiner {
@@ -119,5 +183,5 @@
 }
 
 .block-one-img {
-    width: 100%;
+    max-width: 555px;
 }
