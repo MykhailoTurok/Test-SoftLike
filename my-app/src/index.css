@@ -8,6 +8,7 @@
     -moz-appearance: none;
     border: none;
     outline: none;
+    scroll-behavior: smooth;
 }
 body{
     position: relative;
@@ -26,6 +27,13 @@ body{
 img{
     max-width: 100%;
     border-style: none;
+}
+
+.center-main-block{
+    max-width: 1140px;
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flex-al-center {
@@ -61,37 +69,4 @@ img{
 }
 @media screen and (min-width: 320px) and (max-width: 449px) {
     
-}
-
-/* Meadia screen section */
-
-@media screen and (min-width: 1965px) {
-    body {
-        font-size: 22px;
-    }
-}
-@media screen and (min-width: 1441px) and (max-width: 1964px) {
-    body {
-        font-size: 18px;
-    }
-}
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-    body {
-        font-size: 12px;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-        font-size: 11px;
-    }
-}
-@media screen and (min-width: 450px) and (max-width: 767px) {
-    body {
-        font-size: 10px;
-    }
-}
-@media screen and (min-width: 320px) and (max-width: 449px) {
-    body {
-        font-size: 8px;
-    }
 }

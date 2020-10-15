@@ -35,7 +35,7 @@ class BlockOne extends React.Component {
             let y2 = lastItem.getBoundingClientRect().top
             let r = y2 - y1
     
-            this.setState({ stretchLineHeight: r });
+            this.setState({ stretchLineHeight: r-10 });
         }, 1000)
     }
     
@@ -69,7 +69,7 @@ class BlockOne extends React.Component {
                     i = 0;
                 }
             }
-        }, 100)
+        }, 50)
     }
 
     render() {
@@ -77,24 +77,24 @@ class BlockOne extends React.Component {
             <section className="block-one">
                 <div className="center-main-block">
                     <header className="flex-al-center header">
-                        <div className="conteiner-logo">
+                        <a href="_blank" className="conteiner-logo">
                             <img src={Logo} alt="Logo" />
                             <span className="text-logo">LOGO</span>
-                        </div>
+                        </a>
                         <ul className="flex-al-center header-conteiner-menu">
                             <li>
-                                <span className="text-uppercase">Функционал</span>
+                                <a href="#Functionality" className="text-uppercase">Функционал</a>
                             </li>
                             <li>
-                                <span className="text-uppercase">Пакеты</span>
+                                <a href="#Packages" className="text-uppercase">Пакеты</a>
                             </li>
                             <li className="header-menu-lastLi">
                                 <img src={Phone} alt="Phone" className="header-menu-icons" />
-                                <span>+1111111100</span>
+                                <a href="tel:+1111111100">+1111111100</a>
                             </li>
                             <li className="header-menu-lastLi">
                                 <img src={Email} alt="Email" className="header-menu-icons" />
-                                <a href="_blank" className="header-menu-link">hello@nlab.com</a>
+                                <a href="mailto:hello@nlab.com" className="header-menu-link">hello@nlab.com</a>
                             </li>
                         </ul>
                     </header>
@@ -106,8 +106,8 @@ class BlockOne extends React.Component {
                                 <div className="stretch-left">
                                     <div className="stretch-line" style={{ height: this.state.stretchLineHeight }}></div>
                                 </div>
-                                <ul ref={this.stretchList}>
-                                    <li className="block-one-li-one fade-in block-one-li-networking">
+                                <ul ref={this.stretchList} className="stretch-right">
+                                    <li className="fade-in block-one-li-networking">
                                         Networking Lab is the fastest way to grow
                                     </li>
                                     <li className="fade-in block-one-li-virtualOffice">
@@ -117,7 +117,7 @@ class BlockOne extends React.Component {
                                         Attract skilled professionals, unite your team to pursue a common goal working expediently and
                                         in perfect coordination.
                                     </li>
-                                    <li className="fade-in block-one-li-attractSkilled block-one-li-three">
+                                    <li className="fade-in block-one-li-attractSkilled block-one-li-four">
                                         Provide your market research consultants with efficient tools in order to achieve success in
                                         online business.
                                     </li>

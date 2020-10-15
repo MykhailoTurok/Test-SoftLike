@@ -1,6 +1,7 @@
 /* Modal window */
 
 .modal {
+    z-index: 1000;
     display: none;
     align-items: center;
     flex-direction: column;

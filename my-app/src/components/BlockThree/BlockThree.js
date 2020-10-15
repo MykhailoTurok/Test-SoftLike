@@ -6,7 +6,7 @@ import FrontOffice from './ThreeMain/frontOffice/FrontOffice';
 class BlockThree extends React.Component {
     render() {
         return (
-            <section className="flex-al-center block-three">
+            <section className="flex-al-center block-three" id="Functionality">
                 <h2 className="text-uppercase block-three-title">
                     Simple actions. Tipping point
                 </h2>
@@ -20,7 +20,6 @@ class BlockThree extends React.Component {
                         <FrontOffice />
                     ]
                 }} classTabs = {"flex-al-center text-uppercase threeMain-first-tabs"} />
-                
                 
             </section>
         );
