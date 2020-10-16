@@ -1,6 +1,5 @@
 .blockFour {
-    padding: 4% 15%;
-    overflow: hidden;
+    margin-top: 6%;
     font-family: 'SF Pro Display';
 }
 
@@ -9,31 +8,33 @@
     font-weight: 900;
     letter-spacing: 0.65px;
     color: #060839;
+    margin-bottom: 50px;
 }
 
-.blockFour-main {
+.blockFour-main-container {
+    width: 1140px;
+    /* height: 629px; */
     display: flex;
     justify-content: space-between;
-    height: 300px;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 .blockFour-main-numbers {
-    height: 350%;
     flex-direction: column;
     justify-content: space-between;
-    margin: 13px 0;
 }
 
 .blockNumbers {
     width: 68px;
     height: 161px;
-    justify-content: center;
-    
+    align-items: flex-start;
     box-sizing: border-box;
 }
 
-.blockNumbers span{
+.blockNumbers p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 68px;
     height: 68px;
     color: #54cff0;
@@ -45,24 +46,50 @@
 }
 
 .blockFour-main-content {
-    width: 90%;
+    width: 1043px;
+}
+
+.stretch-container {
+    display: flex;
+}
+.stretch-left {
+    position: relative;
+    padding-top: 10px;
+    width: 27px;
+    min-width: 27px;
+}
+.stretch-line {
+    position: relative;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-right: 2px dashed #d0e2f8;
+    transition: height 4s ease-in-out;
+}
+.stretch-right {
+    margin: 0;
+    margin-bottom: 36px;
+    padding: 0;
+    list-style: none;
 }
 
 .blockFour-main-content-blocks {
     height: 161px;
-    padding: 20px 43px;
+    margin-bottom: 25px;
     box-shadow: 0 0 10px silver;
-    margin: 13px 0;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
 }
 
-/* .blockFour-main-content-blockText {
-
-} */
+.blockFour-main-content-blockText {
+    max-height: 100%;
+    max-width: 780px;
+    padding: 36px 34px 33px 43px;
+    box-sizing: border-box;
+}
 
 .blockFour-main-content-blockText h2{
-    margin: 0;
+    margin-bottom: 13px;
     font-size: 22px;
     font-weight: 500;
     letter-spacing: 0.55px;
@@ -76,11 +103,27 @@
 }
 
 .blockFour-main-content-blockImg {
+    justify-content: center;
     width: 213px;
     height: inherit;
     background-color: #e6f1ff;
 }
 
-/* .blockFour-main-content-blockTitle {
+.blockFour-main-content-blockTitle {
+    max-width: 50px;
+    height: inherit;
+    background-image: linear-gradient(to top, #3652e4, #54cff0);
+    border-top-right-radius: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
 
-} */
+.blockFour-main-content-blockTitle p {
+    font-size: 14px;
+    height: 50px;
+    transform: rotate(-90deg);
+    width: inherit;
+}

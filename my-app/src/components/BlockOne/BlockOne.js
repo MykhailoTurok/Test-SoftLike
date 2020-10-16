@@ -77,11 +77,11 @@ class BlockOne extends React.Component {
             <section className="block-one">
                 <div className="center-main-block">
                     <header className="flex-al-center header">
-                        <a href="_blank" className="conteiner-logo">
+                        <a href="_blank" className="container-logo">
                             <img src={Logo} alt="Logo" />
                             <span className="text-logo">LOGO</span>
                         </a>
-                        <ul className="flex-al-center header-conteiner-menu">
+                        <ul className="flex-al-center header-container-menu">
                             <li>
                                 <a href="#Functionality" className="text-uppercase">Функционал</a>
                             </li>

@@ -5,7 +5,7 @@ import markImg from '../../../../IMG/Shape8.png';
 export default class LandingPageBuilder extends React.Component {
     render() {
         return (
-            <div className="threeMain-content-conteiner">
+            <div className="threeMain-content-container">
                 <div className="threeMain-content-top-text">
                     <p>Creation of website-cum-online office in 30 minutes is a mandatory lead generation tool.</p>
                     <ul>

@@ -5,7 +5,7 @@ class BlockTwo extends React.Component {
     render() {
         return (
             <section className="block-two">
-                <div className="center-main-block">
+                <div className="center-main-block center-main-block-with-background">
                     <h2 className="text-uppercase block-two-title">
                         This is your 360 degree view
                     </h2>

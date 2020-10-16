@@ -36,6 +36,11 @@ img{
     margin-right: auto;
 }
 
+.center-main-block-with-background {
+    position: relative;
+    z-index: 10;
+}
+
 .flex-al-center {
     display: flex;
     align-items: center;
