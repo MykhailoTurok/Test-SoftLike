@@ -17,7 +17,7 @@ export default class FrontOffice extends React.Component {
                         <AutomatedMarketing />,
                         <LandingPageBuilder />
                     ]
-                }} classTabs={"threeMain-second-tabs"} />
+                }} classTabs={"threeMain-second-tabs threeMain-frontOffice-tabs"} classLabel={"threeMain-second-tabs-container"} />
             </React.Fragment>
         );
     }

@@ -5,7 +5,7 @@ import markImg from '../../../../IMG/Shape8.png';
 export default class TrainingAndCertification extends React.Component {
     render() {
         return (
-            <div className="threeMain-content-conteiner">
+            <div className="threeMain-content-container">
                 <div className="threeMain-content-top-text">
                     <p>Implementation of training programs for internal PR and staff development.</p>
                     <ul>

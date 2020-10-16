@@ -21,9 +21,10 @@ class ThreeMain extends React.Component {
     }
 
     render() {
+        let c = this.props.classLabel;
         return (
             <React.Fragment>
-                <div className="flex-al-center threeMain-tabs-conteiner">
+                <div className={`flex-al-center ${c ? c : 'threeMain-office-tabs-container'}`}>
                     {this.getTabsWithContent(this.props.data.tabs)}
                 </div>
 

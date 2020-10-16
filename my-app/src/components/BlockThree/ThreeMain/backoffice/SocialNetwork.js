@@ -5,7 +5,7 @@ import markImg from '../../../../IMG/Shape8.png';
 export default class SocialNetwork extends React.Component {
     render() {
         return (
-            <div className="threeMain-content-conteiner">
+            <div className="threeMain-content-container">
                 <div className="threeMain-content-top-text">
                     <p>Same page tool. Closed social network aimed at uniting your community in order to bring it to a new level of information awareness and involvement.</p>
                     <ul>

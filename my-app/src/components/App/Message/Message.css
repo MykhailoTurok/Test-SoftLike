@@ -1,6 +1,7 @@
 /* Modal window */
 
 .modal {
+    z-index: 1000;
     display: none;
     align-items: center;
     flex-direction: column;
@@ -22,8 +23,6 @@
     border: 1px solid #888;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
-    -webkit-animation: slide-in-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .modal-content form {
@@ -50,7 +49,7 @@
     font-size: 26px;
 }
 
-.button-conteiner {
+.modal-content .button-container {
     height: 30px;
     width: 100%;
 }

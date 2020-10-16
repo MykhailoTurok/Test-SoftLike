@@ -4,7 +4,7 @@ import markImg from '../../../../IMG/Shape8.png';
 export default class AutomatedMarketing extends React.Component {
     render() {
         return (
-            <div className="threeMain-content-conteiner">
+            <div className="threeMain-content-container">
                 <div className="threeMain-content-top-text">
                     <p>Bulk mailing for simultaneous delivery of information or creation of a letter thread with an aim to prompt the message recipient into action (automatic marketing funnel)</p>
                     <ul>
