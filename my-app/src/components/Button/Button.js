@@ -12,7 +12,7 @@ class Button extends React.Component {
     }
 
     render() {
-        return (<p className="button-container" onClick={this.openModal}>{this.props.text}</p>);
+        return (<p className="text-uppercase button-container" onClick={this.openModal}>{this.props.text}</p>);
     }
 };
   

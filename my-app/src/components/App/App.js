@@ -5,6 +5,7 @@ import BlockTwo from '../BlockTwo/BlockTwo.js';
 import Message from './Message/Message';
 import BlockThree from '../BlockThree/BlockThree';
 import BlockFour from '../BlockFour/BlockFour';
+import BlockFive from '../BlockFive/BlockFive';
 import BlockSix from '../BlockSix/BlockSix';
 
 class App extends React.Component {
@@ -16,6 +17,7 @@ class App extends React.Component {
         <BlockTwo />
         <BlockThree />
         <BlockFour />
+        <BlockFive />
         {/* <BlockSix /> */}
         <Message />
       </React.Fragment>
