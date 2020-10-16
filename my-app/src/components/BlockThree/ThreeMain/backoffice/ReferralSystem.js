@@ -5,7 +5,7 @@ import markImg from '../../../../IMG/Shape8.png';
 export default class ReferralSystem extends React.Component {
     render() {
         return (
-            <div className="threeMain-content-conteiner">
+            <div className="threeMain-content-container">
                 <div className="threeMain-content-top-text">
                     <p>Automatic connection of employees to the company and access to their own structural unit.</p>
                     <ul>

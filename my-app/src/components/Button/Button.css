@@ -1,4 +1,4 @@
-.button-conteiner {
+.button-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,12 +10,9 @@
     font-weight: 600;
     letter-spacing: 0.14px;
     text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid transparent;
-    margin-bottom: 20px;
 }
 
-.button-conteiner:hover {
+.button-container:hover {
     background-color: #54def0;
     cursor: pointer;
 }

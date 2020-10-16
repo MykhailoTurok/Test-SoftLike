@@ -15,16 +15,14 @@ class Message extends React.Component {
 
     render() {
         return (
-            <section>
-                <div className="modal" id="modal">
-                    <div className="modal-content">
-                        <p className="close" onClick={this.closeModal}>&times;</p>
-                        <form>
-                            <input type="text" name="Youre Name" placeholder="Youre Name" />
-                            <input type="email" name="Youre e-mail address" placeholder="Youre e-mail address" />
-                            <Button text="Contact sales" />
-                        </form>
-                    </div>
+            <section className="modal" id="modal">
+                <div className="slide-in-top modal-content">
+                    <p className="close" onClick={this.closeModal}>&times;</p>
+                    <form>
+                        <input type="text" name="Youre Name" placeholder="Youre Name" />
+                        <input type="email" name="Youre e-mail address" placeholder="Youre e-mail address" />
+                        <Button text="Contact sales" />
+                    </form>
                 </div>
             </section>
         );

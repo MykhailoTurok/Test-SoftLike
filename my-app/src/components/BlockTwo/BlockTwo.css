@@ -1,14 +1,27 @@
 /* Block two */
 
 .block-two {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    position: relative;
     font-family: 'SF Pro Display';
-    width: 736px;
-    margin: 10% auto;
+    padding: 123px 0 180px 0;
+}
+
+.block-two:before{
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: 271px;
+    display: block;
+    height: 721px;
+    width: 1944px;
+    background-image: url(../../IMG/Rectangle3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.block-two .center-main-block {
+    text-align: center;
+    max-width: 736px;
 }
 
 .block-two-title {
@@ -16,6 +29,7 @@
     font-weight: 900;
     letter-spacing: 0.65px;
     color: #060839;
+    margin: 36px;
 }
 
 .block-two-description {
@@ -27,12 +41,13 @@
 
 .block-two-blue-text {
     font-size: 22.5px;
-    margin-bottom: 39px;
+    margin: 23px 0 39px 0;
     font-weight: bold;
     letter-spacing: 0.56px;
     color: #3652e4;
 }
 
-.block-two .button-conteiner {
+.block-two .button-container {
     width: 360px;
+    margin: 0 auto;
 }

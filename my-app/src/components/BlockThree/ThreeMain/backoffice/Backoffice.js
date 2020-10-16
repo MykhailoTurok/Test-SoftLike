@@ -23,7 +23,7 @@ export default class Backoffice extends React.Component {
                         <InternalMessenger />,
                         <ReferralSystem />
                     ]
-                }} classTabs={"flex-al-center threeMain-second-tabs"} />
+                }} classTabs={"flex-al-center threeMain-second-tabs"} classLabel={"threeMain-second-tabs-container"} />
             </React.Fragment>
         );
     }
