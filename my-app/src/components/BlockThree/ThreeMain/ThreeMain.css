@@ -109,7 +109,7 @@
 .threeMain-content-top-text p{
     font-size: 16px;
     line-height: 1.38;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 .threeMain-content-top-text ul{
     display: flex;
@@ -118,7 +118,6 @@
 }
 .threeMain-content-top-text li{
     display: flex;
-    margin-bottom: 10px;
     list-style: none;
     line-height: 1.88;
     align-content: center;
@@ -143,5 +142,5 @@
     position: absolute;
     max-width: 50%;
     right: 0px;
-    top: 25%;
+    top: 20%;
 }

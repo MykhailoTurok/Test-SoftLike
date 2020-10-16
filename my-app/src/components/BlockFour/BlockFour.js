@@ -87,6 +87,11 @@ class BlockFour extends React.Component {
                                 <div className="stretch-line"></div>
                             </div>
                             {blockNumbers}
+                            <div class="move-chevron-container">
+                                <div class="chevron"></div>
+                                <div class="chevron"></div>
+                                <div class="chevron"></div>
+                            </div>
                         </div>
                         <div className="blockFour-main-content">
                             {content}

@@ -16,7 +16,7 @@ class App extends React.Component {
         <BlockTwo />
         <BlockThree />
         <BlockFour />
-        <BlockSix />
+        {/* <BlockSix /> */}
         <Message />
       </React.Fragment>
     );

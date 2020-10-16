@@ -53,3 +53,20 @@
       opacity: 1;
     }
   }  
+
+
+/* Animation bounceY  */
+
+.bounceY {
+  animation-name: bounceY;
+  animation-duration:1.4s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+
+@keyframes bounceY {
+  0% {opacity: 1; transform: translateY(0px) scale(1);}
+  25%{opacity: 0; transform:translateY(10px) scale(0.9);}
+  26%{opacity: 0; transform:translateY(-10px) scale(0.9);}
+  55% {opacity: 1; transform: translateY(0px) scale(1);}
+}
