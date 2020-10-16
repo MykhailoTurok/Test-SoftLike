@@ -12,9 +12,10 @@
 }
 
 .blockFour-main-container {
+    display: flex;
     width: 1140px;
     height: 629px;
-    display: flex;
+    margin-bottom: 72px;
     justify-content: space-between;
     overflow: hidden;
     overflow: scroll;
@@ -55,12 +56,6 @@
     background-color: #fff;
 }
 
-.blockFour-main-content {
-    padding-top: 10px;
-    width: 1043px;
-    height: inherit;
-}
-
 .blockFour-main-container .stretch-container {
     display: flex;
     height: 1116px;
@@ -83,6 +78,13 @@
     height: 100%;
     background-color: transparent;
     border-right: 3px dashed #d0e2f8;
+}
+
+/* Main content */
+
+.blockFour-main-content {
+    padding-top: 10px;
+    width: 1043px;
 }
 
 .blockFour-main-content-blocks {
