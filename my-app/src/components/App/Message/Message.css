@@ -12,15 +12,16 @@
     width: 100%;
     height: 100%;
     overflow: auto;
+    background-color: #e6f1ff;
     background-color: rgba(0,0,0,0.8);
 }
 
+/* Modal content */
+
 .modal-content {
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #fefefe;
-    padding: 20px;
-    border: 1px solid #888;
+    width: 300px;
+    background-color: #e6f1ff;
+    padding: 0 10px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -28,28 +29,24 @@
 .modal-content form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
+    margin: 13% 0;
     padding: 0 20px;
 }
 
-.modal-content input{
+.modal-content input {
     margin-bottom: 10%;
     padding: 10px 15px;
-    border: 1px solid rgb(218, 215, 215) ;
     border-radius: 20px;
 }
 
 .close {
-    margin: 0;
-    padding: 0;
     cursor: pointer;
     text-align: right;
-    color: #aaa;
-    font-size: 26px;
+    color: rgb(190, 190, 190);
+    font-size: 28px;
 }
 
 .modal-content .button-container {
-    height: 30px;
+    height: 35px;
     width: 100%;
 }
